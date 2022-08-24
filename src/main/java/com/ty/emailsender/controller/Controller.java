@@ -11,7 +11,7 @@ public class Controller {
 
 	@Autowired
 	private Email email;
-
+	
 	@PostMapping("/sendmail")
 	public void sendMail() {
 		email.sendMail("Hired", "Welcome");
